@@ -1,11 +1,9 @@
 import { initPizzaConfigurator } from "./js/pizza.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    initPizzaConfigurator();
-    console.log("Alle Module initialisiert!");
+  initPizzaConfigurator();
+  console.log("Alle Module initialisiert!");
 });
-
-
 
 /*
     Pizza Programm:
@@ -15,4 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
     3. Pizza kann man dann "visuell" sehen und mit button auf "bestellen" abschicken und in Warenkorb packen.
 
     
-*/ 
+*/

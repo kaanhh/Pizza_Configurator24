@@ -1,99 +1,166 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-    <link href="dist/output.css" rel="stylesheet">
-
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
     <nav class="bg-gray-800 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <div class="text-2xl font-bold">
-                <a href="#" class="hover:text-gray-400">LOGO</a>
-            </div>
-            
-            <ul class="flex space-x-6">
-                <li>
-                    <a href="#" class="hover:text-gray-400">Start</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-gray-400">Über Uns</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-gray-400">Kontakt</a>
-                </li>
-            </ul>
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-2xl font-bold">
+          <a href="#" class="hover:text-gray-400">LOGO</a>
         </div>
+
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#" class="hover:text-gray-400">Start</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-400">Über Uns</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-400">Kontakt</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main class="flex flex-col items-center justify-center min-h-screen">
+      <h1 class="text-4xl font-bold text-blue-500">Pizza Konfigurator</h1>
 
-        <h1 class="text-4xl font-bold text-blue-500">Pizza Konfigurator</h1>
-
-        <div id="ingredients-menu" class="p-4 ">
-            <h2 class="text-lg font-bold mb-4">Wähle deine Zutaten:</h2>
-            <div class="grid grid-cols-3 gap-4">
-              <!-- Zutat 1 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="pepperoni" class="text-sm">Pepperoni</label>
-                <input type="checkbox" id="pepperoni" class="ingredient" data-name="Pepperoni">
-              </div>
-              <!-- Zutat 2 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="paprika" class="text-sm">Paprika</label>
-                <input type="checkbox" id="paprika" class="ingredient" data-name="Paprika">
-              </div>
-              <!-- Zutat 3 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="tuna" class="text-sm">Tuna</label>
-                <input type="checkbox" id="tuna" class="ingredient" data-name="Tuna">
-              </div>
-              <!-- Zutat 4 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="ruccola" class="text-sm">Ruccola</label>
-                <input type="checkbox" id="ruccola" class="ingredient" data-name="Ruccola">
-              </div>
-              <!-- Zutat 5 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="mais" class="text-sm">Mais</label>
-                <input type="checkbox" id="mais" class="ingredient" data-name="Mais">
-              </div>
-              <!-- Zutat 6 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="zwiebel" class="text-sm">Zwiebel</label>
-                <input type="checkbox" id="zwiebel" class="ingredient" data-name="Zwiebel">
-              </div>
-              <!-- Zutat 7 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="spinat" class="text-sm">Spinat</label>
-                <input type="checkbox" id="spinat" class="ingredient" data-name="Spinat">
-              </div>
-              <!-- Zutat 8 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="ananas" class="text-sm">Ananas</label>
-                <input type="checkbox" id="ananas" class="ingredient" data-name="Ananas">
-              </div>
-              <!-- Zutat 9 -->
-              <div class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4">
-                <label for="kaese" class="text-sm">Extra Käse</label>
-                <input type="checkbox" id="kaese" class="ingredient" data-name="Extra Käse">
-              </div>
-            </div>
+      <div id="ingredients-menu" class="p-4">
+        <h2 class="text-lg font-bold mb-4">Wähle deine Zutaten:</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Zutat 1 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="pepperoni" class="text-sm">Pepperoni</label>
+            <input
+              type="checkbox"
+              id="pepperoni"
+              class="ingredient"
+              data-name="Pepperoni"
+            />
           </div>
-          
-
-        <div class="text-center">
+          <!-- Zutat 2 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="paprika" class="text-sm">Paprika</label>
+            <input
+              type="checkbox"
+              id="paprika"
+              class="ingredient"
+              data-name="Paprika"
+            />
+          </div>
+          <!-- Zutat 3 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="Salmon" class="text-sm">Salmon</label>
+            <input
+              type="checkbox"
+              id="Salmon"
+              class="ingredient"
+              data-name="Salmon"
+            />
+          </div>
+          <!-- Zutat 4 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="ruccola" class="text-sm">Ruccola</label>
+            <input
+              type="checkbox"
+              id="ruccola"
+              class="ingredient"
+              data-name="Ruccola"
+            />
+          </div>
+          <!-- Zutat 5 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="mais" class="text-sm">Mais</label>
+            <input
+              type="checkbox"
+              id="mais"
+              class="ingredient"
+              data-name="Mais"
+            />
+          </div>
+          <!-- Zutat 6 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="zwiebel" class="text-sm">Zwiebel</label>
+            <input
+              type="checkbox"
+              id="zwiebel"
+              class="ingredient"
+              data-name="Zwiebel"
+            />
+          </div>
+          <!-- Zutat 7 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="spinat" class="text-sm">Spinat</label>
+            <input
+              type="checkbox"
+              id="spinat"
+              class="ingredient"
+              data-name="Spinat"
+            />
+          </div>
+          <!-- Zutat 8 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="ananas" class="text-sm">Ananas</label>
+            <input
+              type="checkbox"
+              id="ananas"
+              class="ingredient"
+              data-name="Ananas"
+            />
+          </div>
+          <!-- Zutat 9 -->
+          <div
+            class="flex items-center space-x-2 bg-gray-200 rounded hover:bg-gray-300 p-4"
+          >
+            <label for="kaese" class="text-sm">Extra Käse</label>
+            <input
+              type="checkbox"
+              id="kaese"
+              class="ingredient"
+              data-name="Extra Käse"
+            />
+          </div>
         </div>
-        <canvas id="pizzaCanvas" width="400" height="400"></canvas>
-        <button class="mt-6 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
-            Fertig!
-        </button>
+      </div>
+
+      <button
+        class="mt-6 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+      >
+        Fertig!
+      </button>
+
+      <div class="text-center"></div>
+      <canvas
+        id="pizzaCanvas"
+        width="400"
+        height="400"
+        style="background: none"
+      ></canvas>
     </main>
 
-<script type="module" src="script.js"></script>
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
