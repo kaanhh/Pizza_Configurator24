@@ -20,8 +20,7 @@ export function initPizzaConfigurator() {
     ctx.drawImage(tomatoSauceImage, 20, 20, 360, 360);
   };
 
-  //Funktion1//////////////////////////////////////////////////////////////
-  // Überwache die Zutatenauswahl
+
   document.querySelectorAll(".ingredient").forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
       if (checkbox.checked && checkbox.dataset.name === "Paprika") {
@@ -45,7 +44,6 @@ export function initPizzaConfigurator() {
     });
   });
 
-  //Funktion2//////////////////////////////////////////////////////////////
   //Platzierung der Pizza Stückchen
   function addIngredientPieces(count, positions, image) {
     const centerX = 200;
@@ -85,9 +83,8 @@ export function initPizzaConfigurator() {
         Math.sqrt((pos.x - newPos.x) ** 2 + (pos.y - newPos.y) ** 2) >
         minDistance
     );
-  }
+  } 
 
-  //Funktion3//////////////////////////////////////////////////////////////
   // Funktion zum Zeichnen der Pizza
   function redrawPizza() {
     // Canvas löschen, um alte Inhalte zu entfernen
@@ -114,4 +111,6 @@ export function initPizzaConfigurator() {
 
   // Zeichne die Pizza beim Start
   redrawPizza();
+
+
 }

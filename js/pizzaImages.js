@@ -7,4 +7,5 @@ tomatoSauceImage.src = "./src/img/tomato.webp";
 const salmonImage = new Image();
 salmonImage.src = "./src/img/salmon.webp";
 
+
 export { paprikaImage, ananasImage, tomatoSauceImage, salmonImage };
